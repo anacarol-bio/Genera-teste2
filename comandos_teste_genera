@@ -1,0 +1,7 @@
+# sssssss
+# Comando para extrair apenas os dados da primeira coluna da planilha original e direcioná-los a um novo arquivo
+  cat sample_info.csv | cut -d ',' -f1 > samples_id.csv
+ # Comando para extrair apenas os dados da terceira coluna da planilha original e direcioná-los a um novo arquivo
+  cat sample_info.csv | cut -d ',' -f3 > population_id.csv
+ # Comando para contar o número de linhas do 'samples_id.csv', correspondente ao número de amostras (exceto cabeçalho)
+  wc -l samples_id.csv
