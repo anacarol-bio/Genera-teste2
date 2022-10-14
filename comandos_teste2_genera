@@ -1,7 +1,12 @@
-# sssssss
-# Comando para extrair apenas os dados da primeira coluna da planilha original e direcioná-los a um novo arquivo
-  cat sample_info.csv | cut -d ',' -f1 > samples_id.csv
- # Comando para extrair apenas os dados da terceira coluna da planilha original e direcioná-los a um novo arquivo
-  cat sample_info.csv | cut -d ',' -f3 > population_id.csv
- # Comando para contar o número de linhas do 'samples_id.csv', correspondente ao número de amostras (exceto cabeçalho)
-  wc -l samples_id.csv
+# Neste arquivo são descritas as etapas de análise local da planilha original 'genera_test2.csv', por linha de comando do terminal Linux Mint
+
+# Dentro do diretório local onde encontra-se o arquivo 'genera_test2.csv', 
+# 1. Comando para extrair apenas os dados da primeira coluna do arquivo 'genera_test2.csv' e direcioná-los a um novo arquivo nomeado como 'samples_id.csv'
+
+    cat sample_info.csv | cut -d ',' -f1 > samples_id.csv
+    
+ # 2. Comando para extrair apenas os dados da terceira coluna do arquivo 'genera_test2.csv' e direcioná-los a um novo arquivo nomeado 'population_id.csv'
+    cat sample_info.csv | cut -d ',' -f3 > population_id.csv
+    
+ # 3. Comando para contar o número de linhas do arquivo 'samples_id.csv', correspondente ao número de amostras (exceto cabeçalho)
+     wc -l samples_id.csv
