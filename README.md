@@ -1,4 +1,4 @@
-# Genera-Teste2
+# Genera-Teste 2
 
 Neste repositório estão todos os dados gerados para a resolução da parte 2 da etapa prática da prova proposta pela equipe Genera.
 
