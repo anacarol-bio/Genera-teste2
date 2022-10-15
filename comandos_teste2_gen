@@ -10,9 +10,29 @@
    
    cat sample_info.csv | cut -d ',' -f3 > population_id.csv
     
-# 3. Comando para ordenar e excluir linhas com termos repetidos no arquivo de entrada e manter apenas as contagens únicas de cada termo em um arquivo .txt de saída
+# 3. Comando para ordenar e excluir linhas com termos repetidos no arquivo 'samples_id.csv' e manter apenas as contagens únicas de cada termo em um novo arquivo .txt
 
     cat samples_id.csv | sort | uniq > samples_unique.txt
     
-# 4. Comando para contar o número de linhas do arquivo 'samples_id.csv', correspondente ao número de amostras (exceto cabeçalho)
-     wc -l samples_id.csv
+# 4. Comando para contar o número de linhas do arquivo 'samples_unique.txt' gerado na etapa 3, correspondente ao número de amostras -1 (com exceção do cabeçalho "Samples")
+# O output deste comando no terminal deve ser igual a "3501", considerando as amostras + cabeçalho
+
+     wc -l samples_unique.txt
+    
+# 5. Comando para ordenar e excluir linhas com termos repetidos no arquivo 'population_id.csv' e manter apenas as contagens únicas de cada termo em um novo arquivo .txt
+
+    cat population_id.csv | sort | uniq > population_unique.txt
+    
+# 6. Comando para contar o número de linhas do arquivo 'population_unique.txt' gerado na etapa 5, correspondente ao número de populações -1 (com exceção do cabeçalho "Population")
+# O output deste comando no terminal deve ser igual a "27", considerando as populações + cabeçalho
+
+     wc -l samples_unique.txt
+     
+# 7. Uma vez criado o arquivo 'population_unique.txt', onde temos a informação de todos os 26 códigos das populações, pode-se contar quantas vezes cada código se repete no arquivo 'teste2.csv' com o comando:
+#OBS: deve-se substituir 'X' pelo código de cada população para que se possa visualizar o número de output no terminal. Neste caso, o número equivale a quantas amostras são associadas a cada população
+       
+       cat teste2.csv | grep 'X' -c 
+       
+# 8. Em um novo arquivo nomeado 'sample_pop_count_total.csv', incluiu-se os dados obtidos da etapa 7, onde na primeira coluna estão os códigos de cada população e na segunda coluna está o número de amostras associadas.
+
+# 9. Por fim, elaborou-se um script no terminal para gerar um gráfico exibindo os dados da etapa 8. Este script está disponível neste mesmo repositório, no arquivo 'plot.py', assim como seu output 'plot.png'
