@@ -1,12 +1,18 @@
-# Neste arquivo são descritas as etapas de análise local da planilha original 'teste2.csv', por linha de comando do terminal Linux Mint
+# Neste arquivo são descritas as etapas de análise da planilha 'teste2.csv' por linha de comando do terminal Linux Mint
 
-# Dentro do diretório local onde encontra-se o arquivo 'genera_test2.csv', 
-# 1. Comando para extrair apenas os dados da primeira coluna do arquivo 'teste2.csv' e direcioná-los a um novo arquivo nomeado como 'samples_id.csv'
+# Dentro do diretório local onde encontra-se o arquivo 'teste2.csv', foram realizadas as seguintes etapas:
+
+# 1. Comando para extrair apenas os dados da primeira coluna (Samples) do arquivo 'teste2.csv' e direcioná-los a um novo arquivo nomeado como 'samples_id.csv'
 
     cat sample_info.csv | cut -d ',' -f1 > samples_id.csv
     
- # 2. Comando para extrair apenas os dados da terceira coluna do arquivo 'teste2.csv' e direcioná-los a um novo arquivo nomeado 'population_id.csv'
-    cat sample_info.csv | cut -d ',' -f3 > population_id.csv
+# 2. Comando para extrair apenas os dados da terceira coluna (Population) do arquivo 'teste2.csv' e direcioná-los a um novo arquivo nomeado 'population_id.csv'
+   
+   cat sample_info.csv | cut -d ',' -f3 > population_id.csv
     
- # 3. Comando para contar o número de linhas do arquivo 'samples_id.csv', correspondente ao número de amostras (exceto cabeçalho)
+# 3. Comando para ordenar e excluir linhas com termos repetidos no arquivo de entrada e manter apenas as contagens únicas de cada termo em um novo arquivo .txt
+
+    cat samples_id.csv | sort | uniq > samples_unique.txt
+    
+# 4. Comando para contar o número de linhas do arquivo 'samples_id.csv', correspondente ao número de amostras (exceto cabeçalho)
      wc -l samples_id.csv
