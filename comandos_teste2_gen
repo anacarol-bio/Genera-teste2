@@ -10,7 +10,7 @@
    
    cat sample_info.csv | cut -d ',' -f3 > population_id.csv
     
-# 3. Comando para ordenar e excluir linhas com termos repetidos no arquivo de entrada e manter apenas as contagens únicas de cada termo em um novo arquivo .txt
+# 3. Comando para ordenar e excluir linhas com termos repetidos no arquivo de entrada e manter apenas as contagens únicas de cada termo em um arquivo .txt de saída
 
     cat samples_id.csv | sort | uniq > samples_unique.txt
     
