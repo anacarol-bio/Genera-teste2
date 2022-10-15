@@ -1,4 +1,4 @@
-# Neste arquivo são descritas as etapas de análise local da planilha original 'genera_test2.csv', por linha de comando do terminal Linux Mint
+# Neste arquivo são descritas as etapas de análise local da planilha original 'genera_teste2.csv', por linha de comando do terminal Linux Mint
 
 # Dentro do diretório local onde encontra-se o arquivo 'genera_test2.csv', 
 # 1. Comando para extrair apenas os dados da primeira coluna do arquivo 'genera_test2.csv' e direcioná-los a um novo arquivo nomeado como 'samples_id.csv'
