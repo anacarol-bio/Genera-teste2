@@ -35,4 +35,4 @@
        
 # 8. Em uma nova planilha nomeada 'sample_pop_count_total.csv', incluiu-se os dados obtidos da etapa 7, onde na primeira coluna estão os códigos de cada população e na segunda coluna está o número de amostras a eles associadas.
 
-# 9. Por fim, elaborou-se um script no terminal para gerar um gráfico exibindo os dados da etapa 8. Este script está disponível neste mesmo repositório, no arquivo 'plot.py', assim como seu output 'plot.png'
+# 9. Por fim, descreveu-se uma série de códigos com a biblioteca Matplotlib do Python no terminal para gerar um gráfico exibindo os dados da etapa 8. Estes códigos estão disponível neste mesmo repositório, no arquivo 'plot.py', assim como seu output 'plot.png'
