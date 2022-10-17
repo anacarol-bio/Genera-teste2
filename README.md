@@ -1,4 +1,4 @@
-# TESTE 2
+# TESTE - PARTE 2
 
 Neste repositório estão todos os dados utilizados para a resolução da parte 2 da prova proposta.
 
