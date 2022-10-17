@@ -8,7 +8,7 @@ plt.xlabel("Poupulações",fontsize=20)
 plt.ylabel("Quantidade de Amostras",fontsize=20)
 
 plt.scatter(x,y)
-plt.plot(x, y)
+plt.plot(x,y)
 
 plt.show()
 
